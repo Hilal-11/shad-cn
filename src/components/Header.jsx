@@ -1,66 +1,29 @@
 import React from 'react'
-import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
-  } from "@/components/ui/navigation-menu"
-
-  // Define the ListItem component
-const ListItem = ({ href, title, children }) => (
-    <li>
-      <NavigationMenuLink asChild>
-        <a href={href} className="block p-2 rounded-md hover:bg-gray-100">
-          <div className="font-medium">{title}</div>
-          <p className="text-sm text-gray-600">{children}</p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  )
-  
+import { Button } from "@/components/ui/button"
 function Header() {
   return (
-    <div>
-    <NavigationMenu>
-        <NavigationMenuList>
-            <NavigationMenuItem>
-                <NavigationMenuTrigger>Web mastery.pro</NavigationMenuTrigger>
-            </NavigationMenuItem>
-            
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
-              </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
-            </ul>
-          
-        </NavigationMenuList>   
-    </NavigationMenu>
+    <div className='flex justify-evenly w-full h-full items-center'>
+        <div className='rounded-md font-bold text-left text-white text-xl'>
+            Webmastery.pro
+        </div>
+        <div className='flex gap-3'>
+            <div className='text-white bg-transparent hover:bg-white duration-500 rounded-full cursor-pointer hover:text-black font-medium px-10 py-2 hover:shadow-lg hover:shadow-black'>
+                <h1>Components</h1>
+            </div>
+            <div className='text-white bg-transparent hover:bg-white duration-500 rounded-full cursor-pointer hover:text-black font-medium px-10 py-2 hover:shadow-lg hover:shadow-black'>
+                <h1>Documentation</h1>
+            </div>
+            <div className='text-white bg-transparent hover:bg-white duration-500 rounded-full cursor-pointer hover:text-black font-medium px-10 py-2 hover:shadow-lg hover:shadow-black'>
+                <h1>Projects</h1>
+            </div>
+            <div className='text-white bg-transparent hover:bg-white duration-500 rounded-full cursor-pointer hover:text-black font-medium px-10 py-2 hover:shadow-lg hover:shadow-black'>
+                <h1>Landing Pages</h1>
+            </div>
+        </div>
+
+        <div>
+            <Button className='bg-white text-black px-8'>SignUp</Button>
+        </div>
     </div>
   )
 }
