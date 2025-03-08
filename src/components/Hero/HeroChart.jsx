@@ -11,7 +11,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import {
-  ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
@@ -102,4 +101,4 @@ export function HeroChart() {
   );
 }
 
-export default HeroChart
+export default HeroChart;
