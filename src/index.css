@@ -114,11 +114,29 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-@layer base {
+/* @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
   }
+} */
+
+
+:root {
+  --bg-color: hsl(240 10% 3.9%);
+  --text-color: color-mix(in srgb, var(--bg-color), white 85%);
+}
+
+[data-theme="light"] {
+  --bg-color: hsl(0, 0%, 100%);
+  --text-color: color-mix(in srgb, var(--bg-color), black 85%);
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
