@@ -146,7 +146,6 @@ body {
   background: linear-gradient(315deg, #08080a, #0a0a0c);
   box-shadow:  -5px -5px 10px #040404,
               5px 5px 10px #040404;
-  z-index: 1;
 }
 
 
@@ -171,11 +170,11 @@ body {
   transition: filter 0.4s ease;
 } */
 
-.box-shadow-niomorphism:hover {
+/* .box-shadow-niomorphism:hover {
   z-index: -10;
   background: linear-gradient(90deg, #03a9f4, #f441a5);
   filter: blur(1.2em);
 }
 .box-shadow-niomorphism:active {
   filter: blur(0.2em);
-}
+} */
