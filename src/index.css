@@ -140,3 +140,42 @@ body {
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
 }
+
+.box-shadow-niomorphism {
+  border-radius: 20px;
+  background: linear-gradient(315deg, #08080a, #0a0a0c);
+  box-shadow:  -5px -5px 10px #040404,
+              5px 5px 10px #040404;
+  z-index: 1;
+}
+
+
+
+/* .box-shadow-niomorphism {
+  position: relative;
+  padding: 3px;
+  
+  border-radius: 0.9em;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.box-shadow-niomorphism::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 0.9em;
+  z-index: -10;
+  filter: blur(0);
+  transition: filter 0.4s ease;
+} */
+
+.box-shadow-niomorphism:hover {
+  z-index: -10;
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  filter: blur(1.2em);
+}
+.box-shadow-niomorphism:active {
+  filter: blur(0.2em);
+}

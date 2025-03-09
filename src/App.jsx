@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "./components/Header"
 import Hero from "./components/Hero/Hero"
+import Projects from "./components/Home/Projects"
 function App() {
   return (
     <div className="bg-neutral-950 min-h-svh py-2 lg:py-4 px-2">
@@ -10,6 +11,9 @@ function App() {
 
       <div className="py-10 lg:my-10 w-full lg:w-[80%] mx-auto "> 
         <Hero />
+      </div>
+      <div className="w-full lg:w-[80%] mx-auto">
+        <Projects />
       </div>
     </div>
   )
