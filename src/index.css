@@ -143,9 +143,9 @@ body {
 
 .box-shadow-niomorphism {
   border-radius: 20px;
-  background: linear-gradient(315deg, #08080a, #0a0a0c);
+  background: linear-gradient(315deg, #090909, #0b0b0b);
   box-shadow:  -5px -5px 10px #040404,
-              5px 5px 10px #040404;
+               5px 5px 10px #101010;
 }
 
 
